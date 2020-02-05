@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import {
   Route,
   NavLink,
@@ -7,26 +7,41 @@ import {
 import Home from "./Home";
 import Stuff from "./Stuff";
 import Contact from "./Contact";
+import { Menu, Header, Image } from 'semantic-ui-react'
+import pic from './profilepic.jpg'
 
 class Main extends Component {
+  state = { activeItem: 'home' }
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
   render() {
+    const { activeItem } = this.state
+
     return (
-      <HashRouter>
-        <div>
-          <h1>Nathaniel Cain</h1>
-          <ul className="header">
-            <li><NavLink exact to="/">Home</NavLink></li>
-            <li><NavLink to="/stuff">Stuff</NavLink></li>
-            <li><NavLink to="/contact">Contact</NavLink></li>
-          </ul>
-          <div className="content">
-            <Route exact path="/" component={Home}/>
-            <Route path="/stuff" component={Stuff}/>
-            <Route path="/contact" component={Contact}/>
-          </div>
-        </div>
-      </HashRouter>
-    );
+      <Fragment>
+        <Header as='h1'>
+          <Image circular src={pic} /> Nathaniel Cain
+        </Header>
+        <Menu pointing secondary vertical>
+          <Menu.Item
+            name='home'
+            active={activeItem === 'home'}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item
+            name='projects'
+            active={activeItem === 'projects'}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item
+            name='contact'
+            active={activeItem === 'contact'}
+            onClick={this.handleItemClick}
+          />
+        </Menu>
+      </Fragment>
+    )
   }
 }
 
