@@ -7,15 +7,15 @@ import { Switch, Route } from 'react-router-dom'
 class AppContainer extends Component {
 
   componentDidMount() {
-    this.props.history.push(`/${this.props.activeItem}`)
+    console.log("App container mounted!")
   }
 
   render() {
     return (
-      <div></div>
+      <div>
+      </div>
     )
   }
-
 }
 
 export default AppContainer;
