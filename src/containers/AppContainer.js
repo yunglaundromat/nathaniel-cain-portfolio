@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import NavBar from '../components/NavBar'
-import Overview from '../components/Overview'
+import About from '../components/About'
+import Home from '../components/Home'
+import Projects from '../components/Projects'
 import Resume from '../components/Resume'
-import Testimonials from '../components/Testimonials'
 import { Switch, Route } from 'react-router-dom'
 import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment } from 'semantic-ui-react'
 
@@ -12,19 +13,45 @@ class AppContainer extends Component {
     console.log("App container mounted!")
   }
 
+  state = {
+    selection: "home"
+  }
+
+  handleClick = (e) => {
+    let newSelection;
+    if (e.target.className.includes("home")) {
+      newSelection = "home"
+    } else if (e.target.className.includes("projects")) {
+      newSelection = "projects"
+    } else if (e.target.className.includes("about")) {
+      newSelection = "about"
+    } else if (e.target.className.includes("resume")) {
+      newSelection = "resume"
+    }
+
+    this.setState({
+      selection: newSelection
+    })
+  }
+
+  renderSelection() {
+    if (this.state.selection === "home") {
+      return <Home />
+    } else if (this.state.selection === "projects") {
+      return <Projects />
+    } else if (this.state.selection === "about") {
+      return <About />
+    } else if (this.state.selection === "resume") {
+      return <Resume />
+    }
+  }
+
+
   render() {
     return (
       <div>
-        <NavBar />
-
-        <Container text style={{ marginTop: '7em' }}>
-          <Header as='h1'>Semantic UI React Fixed Template</Header>
-          <p>This is a basic fixed menu template using fixed size containers.</p>
-          <p>
-            A text container is used for the main container, which is useful for single column layouts.
-          </p>
-        </Container>
-
+        <NavBar handleClick={this.handleClick}/>
+        {this.renderSelection()}
         <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
           <Container textAlign='center'>
             <Grid divided inverted stackable>

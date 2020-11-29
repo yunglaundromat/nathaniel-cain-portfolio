@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-class Overview extends Component {
+class Home extends Component {
 
   componentDidMount() {
-    console.log("overview!")
+    console.log("home!")
   }
 
   render() {
@@ -13,4 +13,4 @@ class Overview extends Component {
   }
 }
 
-export default Overview;
+export default Home;
