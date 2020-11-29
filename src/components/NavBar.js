@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
-import { Header, Icon, Image, Menu } from 'semantic-ui-react'
+import { Header, Icon, Image, Menu, Container } from 'semantic-ui-react'
 
 class NavBar extends Component {
 
   render() {
     return (
       <div>
-        <br></br>
-        <Image
-          centered
-          size='small'
-          src='/img.jpg'
-          circular
-        />
-        <Header as='h1' textAlign='center'>
-          <Icon name='code' />
-          <Header.Content>
-            Nathaniel Cain
-            <Header.Subheader>Full Stack Web Developer</Header.Subheader>
-          </Header.Content>
-        </Header>
+        <Menu fixed='top' inverted>
+          <Container>
+            <Menu.Item as='a' header>
+              <Image size='mini' src='/logo.png' style={{ marginRight: '1.5em' }} />
+              Home
+            </Menu.Item>
+            <Menu.Item as='a'>Home</Menu.Item>
+          </Container>
+        </Menu>
       </div>
       //<Menu pointing vertical>
         //<Menu.Item
