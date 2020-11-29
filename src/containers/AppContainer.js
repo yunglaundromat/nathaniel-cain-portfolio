@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import NavBar from '../components/NavBar'
 import About from '../components/About'
 import Home from '../components/Home'
@@ -50,7 +50,9 @@ class AppContainer extends Component {
   render() {
     return (
       <div>
-        <NavBar handleClick={this.handleClick}/>
+        <Fragment>
+          <NavBar handleClick={this.handleClick}/>
+        </Fragment>
         {this.renderSelection()}
         <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
           <Container textAlign='center'>
