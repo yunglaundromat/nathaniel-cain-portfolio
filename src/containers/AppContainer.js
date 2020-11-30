@@ -5,7 +5,7 @@ import Home from '../components/Home'
 import Projects from '../components/Projects'
 import Resume from '../components/Resume'
 import { Switch, Route } from 'react-router-dom'
-import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment } from 'semantic-ui-react'
+import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment, Icon } from 'semantic-ui-react'
 
 class AppContainer extends Component {
 
@@ -93,19 +93,13 @@ class AppContainer extends Component {
             </Grid>
 
             <Divider inverted section />
-            <Image centered size='mini' src='/logo.png' />
             <List horizontal inverted divided link size='small'>
               <List.Item as='a' href='#'>
-                Site Map
+                Copyright © 2020 Nathaniel Cain
               </List.Item>
               <List.Item as='a' href='#'>
-                Contact Us
-              </List.Item>
-              <List.Item as='a' href='#'>
-                Terms and Conditions
-              </List.Item>
-              <List.Item as='a' href='#'>
-                Privacy Policy
+                Built with Semantic UI React
+                <Icon name='react' />
               </List.Item>
             </List>
           </Container>

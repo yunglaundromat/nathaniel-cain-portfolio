@@ -10,11 +10,11 @@ class Home extends Component {
   render() {
     return (
       <Container style={{ marginTop: '6em' }}>
-        <Header as='h1' size='large'>
-          <Icon name='laptop' />
+        <Header as='h1' size='massive' color="blue">
+          <Icon name='code branch' />
           <Header.Content>
             Nathaniel Cain
-            <Header.Subheader>Full Stack Web Developer</Header.Subheader>
+            <Header.Subheader>Software Engineer</Header.Subheader>
           </Header.Content>
         </Header>
         <Header as='h2' dividing>
@@ -72,7 +72,7 @@ class Home extends Component {
                             <List.Icon name='file' />
                             <List.Content>
                               <List.Header>selenium</List.Header>
-                              <List.Description>Trained in Selenium utilizing Java, testing large-scale applications</List.Description>
+                              <List.Description>Trained in Selenium utilizing Java, for testing in large-scale applications</List.Description>
                             </List.Content>
                           </List.Item>
                         </List.List>
@@ -81,12 +81,18 @@ class Home extends Component {
                   </List.List>
                 </List.Content>
               </List.Item>
+              <List.Item>
+                <List.Icon name='folder' />
+                <List.Content>
+                  <List.Header>about me</List.Header>
+                  <List.Description>Full stack web developer with a passion for urban exploration, political science and cartography. With thorough experience in Rails and React, and a background in sales and team leadership, I thrive in an environment of collaboration and respect.</List.Description>
+                </List.Content>
+              </List.Item>
             </List>
           </Grid.Column>
-
-            <Grid.Column>
-              <Image src='img.jpg' size='medium' rounded centered/>
-            </Grid.Column>
+          <Grid.Column>
+            <Image src='img.jpg' size='medium' rounded centered style={{ marginTop: '2em' }}/>
+          </Grid.Column>
         </Grid>
       </Container>
     )
