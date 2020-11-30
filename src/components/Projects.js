@@ -92,7 +92,6 @@ class Projects extends Component {
             </List>
           </Grid.Column>
           <Grid.Column>
-            <Image src='img.jpg' size='medium' rounded centered style={{ marginTop: '2em' }}/>
           </Grid.Column>
         </Grid>
       </Container>
