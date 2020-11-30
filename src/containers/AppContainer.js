@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import NavBar from '../components/NavBar'
-import About from '../components/About'
+import Blogs from '../components/Blogs'
 import Home from '../components/Home'
 import Projects from '../components/Projects'
 import Resume from '../components/Resume'
@@ -23,8 +23,8 @@ class AppContainer extends Component {
       newSelection = "home"
     } else if (e.target.className.includes("projects")) {
       newSelection = "projects"
-    } else if (e.target.className.includes("about")) {
-      newSelection = "about"
+    } else if (e.target.className.includes("blogs")) {
+      newSelection = "blogs"
     } else if (e.target.className.includes("resume")) {
       newSelection = "resume"
     }
@@ -39,8 +39,8 @@ class AppContainer extends Component {
       return <Home />
     } else if (this.state.selection === "projects") {
       return <Projects />
-    } else if (this.state.selection === "about") {
-      return <About />
+    } else if (this.state.selection === "blogs") {
+      return <Blogs />
     } else if (this.state.selection === "resume") {
       return <Resume />
     }

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-class About extends Component {
+class Blogs extends Component {
 
   componentDidMount() {
-    console.log("About mounted!")
+    console.log("Blogs mounted!")
   }
 
   render() {
@@ -13,4 +13,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Blogs;
