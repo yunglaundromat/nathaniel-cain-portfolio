@@ -20,7 +20,7 @@ class Home extends Component {
         <Header as='h2' dividing>
         </Header>
         <Grid columns={3} stackable centered>
-          <Grid.Column>
+          <Grid.Column style={{ marginTop: '1em' }}>
             <List>
               <List.Item>
                 <List.Icon name='folder' />
@@ -81,6 +81,7 @@ class Home extends Component {
                   </List.List>
                 </List.Content>
               </List.Item>
+              <br></br>
               <List.Item>
                 <List.Icon name='folder' />
                 <List.Content>
@@ -91,7 +92,7 @@ class Home extends Component {
             </List>
           </Grid.Column>
           <Grid.Column>
-            <Image src='img.jpg' size='medium' rounded centered style={{ marginTop: '2em' }}/>
+            <Image src='img.jpg' size='large' rounded centered style={{ marginTop: '1em' }}/>
           </Grid.Column>
         </Grid>
       </Container>
