@@ -87,7 +87,7 @@ class Projects extends Component {
                       <List.Icon name='folder' />
                       <List.Content>
                         <List.Header>client-side</List.Header>
-                        <List.Description>Fetches data to the front-end server from City Bikes API, giving information on every bike sharing system across the world. Once the user selects a city, they are able to view all bike share systems within the city limits. From there, they are able to view every bike share station within the selected system, providing information on how many bikes and free slots are at each station. Allows the user to log in using JWT for authentication/authorization, and subsequently add a network to their favorites list.</List.Description>
+                        <List.Description>Fetches data to the front-end from City Bikes API, giving information on every bike sharing system across the world. Once the user selects a city, they are able to view all bike share systems within the city limits. From there, they are able to view every bike share station within the selected system, providing information on how many bikes and free slots are at each station. Allows the user to log in (using BCrypt and JWT for authentication/authorization), and subsequently add a network to their favorites list. Client-side is built on React.js.</List.Description>
                         <List.List>
                           <List.Item>
                             <List.Icon name='linkify' />
