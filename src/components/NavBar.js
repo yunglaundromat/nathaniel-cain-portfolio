@@ -10,7 +10,7 @@ const NavBar = (props) => {
           <Menu.Item onClick={props.handleClick} className="home"><Icon name='home' size='large' /></Menu.Item>
           <Menu.Item position="right" onClick={props.handleClick} className="home">About Me</Menu.Item>
           <Menu.Item onClick={props.handleClick} className="projects">Projects</Menu.Item>
-          <Menu.Item onClick={props.handleClick} className="blogs">Blogs</Menu.Item>
+          <Menu.Item href='https://medium.com/@nathanielcain'>Blogs</Menu.Item>
           <Menu.Item onClick={props.handleClick} className="resume">Resume</Menu.Item>
           <Menu.Item onClick={props.handleClick} className="contact">Contact</Menu.Item>
         </Container>

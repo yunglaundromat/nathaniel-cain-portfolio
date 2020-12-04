@@ -8,25 +8,11 @@ class Home extends Component {
     contentVisibility: false
    }
 
-  componentDidMount() {
-    this.toggleHeaderVisibility()
-  }
-
-
-  toggleHeaderVisibility() {
-    this.setState((prevState) => ({ headerVisibility: !prevState.headerVisibility }))
-  }
-
-  toggleContentVisibility() {
-    console.log("function hit!")
-    this.setState((prevState) => ({ contentVisibility: !prevState.contentVisibility }))
-  }
-
   render() {
     return (
       <Container style={{ marginTop: '6em' }} >
         <Fragment>
-          <Transition visible={this.state.headerVisibility} animation='scale' duration={1000}>
+
             <Header as='h1' size='massive' color="blue">
               <Icon name='code branch' />
               <Header.Content >
@@ -34,11 +20,10 @@ class Home extends Component {
                 <Header.Subheader>Software Engineer</Header.Subheader>
               </Header.Content>
             </Header>
-          </Transition>
+
         </Fragment>
         <Header as='h2' dividing>
         </Header>
-        <Transition visible={this.state.contentVisibility} animation='scale' duration={1000}>
           <Grid columns={3} stackable centered>
             <Grid.Column style={{ marginTop: '1em' }}>
               <List>
@@ -115,7 +100,6 @@ class Home extends Component {
               <Image src='img.jpg' size='large' rounded centered style={{ marginTop: '1em' }}/>
             </Grid.Column>
           </Grid>
-        </Transition>
       </Container>
     )
   }

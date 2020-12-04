@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react'
 import NavBar from '../components/NavBar'
-import Blogs from '../components/Blogs'
 import Home from '../components/Home'
 import Projects from '../components/Projects'
 import Resume from '../components/Resume'
@@ -25,8 +24,6 @@ class AppContainer extends Component {
       newSelection = "home"
     } else if (e.target.className.includes("projects")) {
       newSelection = "projects"
-    } else if (e.target.className.includes("blogs")) {
-      newSelection = "blogs"
     } else if (e.target.className.includes("resume")) {
       newSelection = "resume"
     } else if (e.target.className.includes("contact")) {
@@ -43,8 +40,6 @@ class AppContainer extends Component {
       this.props.history.push("/home")
     } else if (this.state.selection === "projects") {
       this.props.history.push("/projects")
-    } else if (this.state.selection === "blogs") {
-      this.props.history.push("/blogs")
     } else if (this.state.selection === "resume") {
       this.props.history.push("/resume")
     } else if (this.state.selection === "contact") {
@@ -65,9 +60,6 @@ class AppContainer extends Component {
             }} />
             <Route path="/projects" render={(routeProps) => {
               return <Projects {...routeProps} />
-            }} />
-            <Route path="/blogs" render={(routeProps) => {
-              return <Blogs {...routeProps}/>
             }} />
             <Route path="/resume" render={(routeProps) => {
               return <Resume {...routeProps} />
