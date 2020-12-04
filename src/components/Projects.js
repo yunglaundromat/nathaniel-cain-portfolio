@@ -9,7 +9,6 @@ class Projects extends Component {
 
   render() {
     return(
-      <div>
       <Container style={{ marginTop: '6em' }}>
         <Header as='h1' size='massive' color="blue">
           <Icon name='folder open' />
@@ -125,7 +124,6 @@ class Projects extends Component {
           </Grid.Column>
         </Grid>
       </Container>
-      </div>
     )
   }
 }

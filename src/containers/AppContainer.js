@@ -4,13 +4,15 @@ import Blogs from '../components/Blogs'
 import Home from '../components/Home'
 import Projects from '../components/Projects'
 import Resume from '../components/Resume'
+import Contact from '../components/Contact'
 import { Switch, Route } from 'react-router-dom'
-import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment, Icon } from 'semantic-ui-react'
+import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment, Icon, Button } from 'semantic-ui-react'
 
 class AppContainer extends Component {
 
   componentDidMount() {
     console.log("App container mounted!")
+    this.props.history.push("/home")
   }
 
   state = {
@@ -27,22 +29,26 @@ class AppContainer extends Component {
       newSelection = "blogs"
     } else if (e.target.className.includes("resume")) {
       newSelection = "resume"
+    } else if (e.target.className.includes("contact")) {
+      newSelection = "contact"
     }
 
     this.setState({
       selection: newSelection
-    })
+    }, () => this.renderSelection())
   }
 
   renderSelection() {
     if (this.state.selection === "home") {
-      return <Home />
+      this.props.history.push("/home")
     } else if (this.state.selection === "projects") {
-      return <Projects />
+      this.props.history.push("/projects")
     } else if (this.state.selection === "blogs") {
-      return <Blogs />
+      this.props.history.push("/blogs")
     } else if (this.state.selection === "resume") {
-      return <Resume />
+      this.props.history.push("/resume")
+    } else if (this.state.selection === "contact") {
+      this.props.history.push("contact")
     }
   }
 
@@ -53,52 +59,47 @@ class AppContainer extends Component {
         <Fragment>
           <NavBar handleClick={this.handleClick}/>
         </Fragment>
-        {this.renderSelection()}
+        <Switch>
+          <Route path="/home" render={(routeProps) => {
+              return <Home {...routeProps} />
+            }} />
+            <Route path="/projects" render={(routeProps) => {
+              return <Projects {...routeProps} />
+            }} />
+            <Route path="/blogs" render={(routeProps) => {
+              return <Blogs {...routeProps}/>
+            }} />
+            <Route path="/resume" render={(routeProps) => {
+              return <Resume {...routeProps} />
+            }} />
+            <Route path="/contact" render={(routeProps) => {
+              return <Contact {...routeProps}/>
+            }} />
+        </Switch>
         <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
           <Container textAlign='center'>
-            <Grid divided inverted stackable>
-              <Grid.Column width={3}>
-                <Header inverted as='h4' content='Group 1' />
-                <List link inverted>
-                  <List.Item as='a'>Link One</List.Item>
-                  <List.Item as='a'>Link Two</List.Item>
-                  <List.Item as='a'>Link Three</List.Item>
-                  <List.Item as='a'>Link Four</List.Item>
-                </List>
+            <Grid inverted stackable columns={4} centered>
+              <Grid.Column width={1} textAlign="center">
+                <Button circular icon='github' href="https://github.com/yunglaundromat"/>
               </Grid.Column>
-              <Grid.Column width={3}>
-                <Header inverted as='h4' content='Group 2' />
-                <List link inverted>
-                  <List.Item as='a'>Link One</List.Item>
-                  <List.Item as='a'>Link Two</List.Item>
-                  <List.Item as='a'>Link Three</List.Item>
-                  <List.Item as='a'>Link Four</List.Item>
-                </List>
+              <Grid.Column width={1} textAlign="center">
+                <Button circular icon='linkedin' href="https://www.linkedin.com/in/nathaniel-cain-6b7703176/"/>
               </Grid.Column>
-              <Grid.Column width={3}>
-                <Header inverted as='h4' content='Group 3' />
-                <List link inverted>
-                  <List.Item as='a'>Link One</List.Item>
-                  <List.Item as='a'>Link Two</List.Item>
-                  <List.Item as='a'>Link Three</List.Item>
-                  <List.Item as='a'>Link Four</List.Item>
-                </List>
+              <Grid.Column width={1} textAlign="center">
+                <Button circular icon='angellist' href="https://angel.co/u/nathaniel-cain"/>
               </Grid.Column>
-              <Grid.Column width={7}>
-                <Header inverted as='h4' content='Footer Header' />
-                <p>
-                  Extra space for a call to action inside the footer that could help re-engage users.
-                </p>
+              <Grid.Column width={1} textAlign="center">
+                <Button circular icon='medium m' href="https://medium.com/@nathanielcain"/>
               </Grid.Column>
             </Grid>
-
             <Divider inverted section />
-            <List horizontal inverted divided link size='small'>
-              <List.Item as='a' href='#'>
+            <List horizontal inverted link size='small'>
+              <List.Item>
                 Copyright © 2020 Nathaniel Cain
               </List.Item>
-              <List.Item as='a' href='#'>
-                Built with Semantic UI React
+              <br></br>
+              <List.Item>
+                Built with Semantic UI React<span> </span>
                 <Icon name='react' />
               </List.Item>
             </List>
