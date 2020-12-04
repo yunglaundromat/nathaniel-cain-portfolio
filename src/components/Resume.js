@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Document } from 'react-pdf'
 
 class Resume extends Component {
 
@@ -8,7 +9,9 @@ class Resume extends Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+        <Document file="resume.pdf" />
+      </div>
     )
   }
 }

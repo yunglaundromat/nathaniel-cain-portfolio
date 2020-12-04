@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Header, Icon, Container, Image, Button, Divider, Grid, Menu, Segment, List } from 'semantic-ui-react'
+import { Header, Icon, Container } from 'semantic-ui-react'
 
 class Contact extends Component {
 
@@ -13,10 +13,10 @@ class Contact extends Component {
         <Header as='h1' size='massive' color="blue">
           <Icon name='edit' />
           <Header.Content>
-            Contact Me
           </Header.Content>
         </Header>
         <Header as='h2' dividing>
+          Contact
         </Header>
       </Container>
     )

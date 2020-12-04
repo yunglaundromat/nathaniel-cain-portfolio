@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react'
-import { Header, Image, Container, List, Grid, Icon } from 'semantic-ui-react'
+import React, { Component } from 'react'
+import { Header, Container, List, Grid, Icon } from 'semantic-ui-react'
 
 class Projects extends Component {
 

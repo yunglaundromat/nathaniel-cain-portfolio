@@ -1,26 +1,19 @@
 import React, { Component, Fragment } from 'react'
-import { Header, Icon, Container, Image, Button, Divider, Grid, Menu, Segment, List, Transition } from 'semantic-ui-react'
+import { Header, Icon, Container, Image, Grid, List } from 'semantic-ui-react'
 
 class Home extends Component {
-
-  state = {
-    headerVisibility: false,
-    contentVisibility: false
-   }
 
   render() {
     return (
       <Container style={{ marginTop: '6em' }} >
         <Fragment>
-
-            <Header as='h1' size='massive' color="blue">
-              <Icon name='code branch' />
-              <Header.Content >
-                Nathaniel Cain
-                <Header.Subheader>Software Engineer</Header.Subheader>
-              </Header.Content>
-            </Header>
-
+          <Header as='h1' size='massive' color="blue">
+            <Image src="resume.png" />
+            <Header.Content >
+              Nathaniel Cain
+              <Header.Subheader>Software Engineer</Header.Subheader>
+            </Header.Content>
+          </Header>
         </Fragment>
         <Header as='h2' dividing>
         </Header>

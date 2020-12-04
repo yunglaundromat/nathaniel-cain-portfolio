@@ -1,11 +1,10 @@
 import React, { Component, Fragment } from 'react'
-import NavBar from '../components/NavBar'
 import Home from '../components/Home'
 import Projects from '../components/Projects'
 import Resume from '../components/Resume'
 import Contact from '../components/Contact'
 import { Switch, Route } from 'react-router-dom'
-import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment, Icon, Button } from 'semantic-ui-react'
+import { Container, Divider, Grid, List, Segment, Icon, Button, Menu, Image } from 'semantic-ui-react'
 
 class AppContainer extends Component {
 
@@ -51,9 +50,18 @@ class AppContainer extends Component {
   render() {
     return (
       <div>
-        <Fragment>
-          <NavBar handleClick={this.handleClick}/>
-        </Fragment>
+        <Container>
+          <Menu fixed='top' inverted icon borderless>
+            <Container>
+              <Menu.Item onClick={this.handleClick} className="home"><Icon name="home" size="large"/></Menu.Item>
+              <Menu.Item position="right" onClick={this.handleClick} className="home">About Me</Menu.Item>
+              <Menu.Item onClick={this.handleClick} className="projects">Projects</Menu.Item>
+              <Menu.Item href='https://medium.com/@nathanielcain'>Blogs</Menu.Item>
+              <Menu.Item onClick={this.handleClick} className="resume">Resume</Menu.Item>
+              <Menu.Item onClick={this.handleClick} className="contact">Contact</Menu.Item>
+            </Container>
+          </Menu>
+        </Container>
         <Switch>
           <Route path="/home" render={(routeProps) => {
               return <Home {...routeProps} />
