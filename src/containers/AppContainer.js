@@ -80,16 +80,16 @@ class AppContainer extends Component {
           <Container textAlign='center'>
             <Grid inverted stackable columns={4} centered>
               <Grid.Column width={1} textAlign="center">
-                <Button circular icon='github' href="https://github.com/yunglaundromat"/>
+                <Button circular color="blue" icon='github' href="https://github.com/yunglaundromat"/>
               </Grid.Column>
               <Grid.Column width={1} textAlign="center">
-                <Button circular icon='linkedin' href="https://www.linkedin.com/in/nathaniel-cain-6b7703176/"/>
+                <Button circular color="blue" icon='linkedin' href="https://www.linkedin.com/in/nathaniel-cain-6b7703176/"/>
               </Grid.Column>
               <Grid.Column width={1} textAlign="center">
-                <Button circular icon='angellist' href="https://angel.co/u/nathaniel-cain"/>
+                <Button circular color="blue" icon='angellist' href="https://angel.co/u/nathaniel-cain"/>
               </Grid.Column>
               <Grid.Column width={1} textAlign="center">
-                <Button circular icon='medium m' href="https://medium.com/@nathanielcain"/>
+                <Button circular color="blue" icon='medium m' href="https://medium.com/@nathanielcain"/>
               </Grid.Column>
             </Grid>
             <Divider inverted section />

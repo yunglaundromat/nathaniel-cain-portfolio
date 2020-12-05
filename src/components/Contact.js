@@ -10,11 +10,6 @@ class Contact extends Component {
   render() {
     return (
       <Container style={{ marginTop: '6em' }}>
-        <Header as='h1' size='massive' color="blue">
-          <Icon name='edit' />
-          <Header.Content>
-          </Header.Content>
-        </Header>
         <Header as='h2' dividing>
           Contact
         </Header>

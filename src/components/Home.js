@@ -5,10 +5,10 @@ class Home extends Component {
 
   render() {
     return (
-      <Container style={{ marginTop: '6em' }} >
+      <Container style={{ marginTop: '6em' }}>
         <Fragment>
-          <Header as='h1' size='massive' color="blue">
-            <Image src="resume.png" />
+          <Header as='h1' color="blue">
+            <img src="logo.png"/>
             <Header.Content >
               Nathaniel Cain
               <Header.Subheader>Software Engineer</Header.Subheader>
