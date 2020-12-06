@@ -84,7 +84,7 @@ class Home extends Component {
                   <List.Icon name='folder' />
                   <List.Content>
                     <List.Header>about me</List.Header>
-                    <List.Description>Full stack web developer with a passion for urban exploration, political science and cartography. With thorough experience in Rails and React, and a background in sales and team leadership, I thrive in an environment of collaboration and respect.</List.Description>
+                    <List.Description>Full stack web developer with a passion for urban exploration, political science and cartography. With thorough experience in Ruby on Rails, Javascript and React.js, and a background in sales and team leadership, I thrive in an environment of collaboration and respect.</List.Description>
                   </List.Content>
                 </List.Item>
               </List>

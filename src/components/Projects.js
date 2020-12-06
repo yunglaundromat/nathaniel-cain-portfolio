@@ -14,7 +14,7 @@ class Projects extends Component {
           <Icon name='folder open' />
           <Header.Content>
             Projects
-            <Header.Subheader>Individual projects and collaborative creations.</Header.Subheader>
+            <Header.Subheader>Demonstrations of select individual projects and collaborative creations.</Header.Subheader>
           </Header.Content>
         </Header>
         <Header as='h2' dividing>
