@@ -9,7 +9,6 @@ import { Container, Divider, Grid, List, Segment, Icon, Button, Menu, Image } fr
 class AppContainer extends Component {
 
   componentDidMount() {
-    console.log("App container mounted!")
     this.props.history.push("/home")
   }
 

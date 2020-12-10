@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import { Header, Container, List, Grid, Icon } from 'semantic-ui-react'
 
 class Projects extends Component {
@@ -10,13 +10,15 @@ class Projects extends Component {
   render() {
     return(
       <Container style={{ marginTop: '6em' }}>
-        <Header as='h1' size='massive' color="blue">
-          <Icon name='folder open' />
-          <Header.Content>
-            Projects
-            <Header.Subheader>Demonstrations of select individual projects and collaborative creations.</Header.Subheader>
-          </Header.Content>
-        </Header>
+        <Fragment>
+          <Header as='h1' color="blue">
+            <img src="logo.png"/>
+            <Header.Content >
+              Projects
+              <Header.Subheader>Demonstrations of select individual projects and collaborative creations.</Header.Subheader>
+            </Header.Content>
+          </Header>
+        </Fragment>
         <Header as='h2' dividing>
         </Header>
         <Grid columns={2} stackable centered>
