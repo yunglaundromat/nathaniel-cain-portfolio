@@ -83,7 +83,7 @@ class AppContainer extends Component {
                 <Button circular color="blue" icon='github' href="https://github.com/yunglaundromat"/>
               </Grid.Column>
               <Grid.Column width={1} textAlign="center">
-                <Button circular color="blue" icon='linkedin' href="https://www.linkedin.com/in/nathaniel-cain-6b7703176/"/>
+                <Button circular color="blue" icon='linkedin' href="https://www.linkedin.com/in/nathaniel-cain/"/>
               </Grid.Column>
               <Grid.Column width={1} textAlign="center">
                 <Button circular color="blue" icon='angellist' href="https://angel.co/u/nathaniel-cain"/>
