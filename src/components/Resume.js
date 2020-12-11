@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Container, Header } from "semantic-ui-react";
+import { Container, Header, Image } from "semantic-ui-react";
 
 class Resume extends Component {
 
@@ -16,8 +16,9 @@ class Resume extends Component {
         </Fragment>
         <Header as='h2' dividing>
         </Header>
-        <Container textAlign="center">
-        </Container>
+          <img
+            src='resume.pdf'
+          />
       </Container>
     );
   }
