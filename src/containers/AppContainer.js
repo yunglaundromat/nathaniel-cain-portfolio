@@ -66,7 +66,7 @@ class AppContainer extends Component {
               return <Resume {...routeProps} />
             }} />
         </Switch>
-        <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
+        <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }} fluid>
           <Container textAlign='center'>
             <Grid inverted stackable columns={4} centered>
               <Grid.Column width={1} textAlign="center">

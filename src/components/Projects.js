@@ -28,7 +28,7 @@ class Projects extends Component {
                 <List.Icon name='folder' />
                 <List.Content>
                   <List.Header>cryptotrader</List.Header>
-                  <List.Description>Cryptocurrency purchasing simulator that reflects real-time values of a vast array of cryptocurrencies.</List.Description><br></br>
+                  <List.Description>Cryptocurrency purchasing simulator that reflects real-time values of a vast array of cryptocurrencies.</List.Description>
                   <List.List>
                     <List.Item>
                       <List.Icon name='folder' />
@@ -44,7 +44,7 @@ class Projects extends Component {
                           </List.Item>
                         </List.List>
                       </List.Content>
-                    </List.Item><br></br>
+                    </List.Item>
                     <List.Item>
                       <List.Icon name='folder' />
                       <List.Content>
@@ -67,7 +67,7 @@ class Projects extends Component {
           </Grid.Column>
           <Grid.Column style={{ marginTop: '2em' }}>
             <div class="container">
-              <video src="cryptotraderclientdemo.mov" width="600" controls></video>
+              <video src="cryptotraderclientdemo.mov" width="100%" controls></video>
             </div>
           </Grid.Column>
         </Grid>
@@ -82,7 +82,7 @@ class Projects extends Component {
                 <List.Icon name='folder' />
                 <List.Content>
                   <List.Header>bike share international</List.Header>
-                  <List.Description>Comprehensive app to assist users looking to find bike share systems and stations in cities across the world.</List.Description><br></br>
+                  <List.Description>Comprehensive app to assist users looking to find bike share systems and stations in cities across the world.</List.Description>
                   <List.List>
                     <List.Item>
                       <List.Icon name='folder' />
@@ -98,7 +98,7 @@ class Projects extends Component {
                           </List.Item>
                         </List.List>
                       </List.Content>
-                    </List.Item><br></br>
+                    </List.Item>
                     <List.Item>
                       <List.Icon name='folder' />
                       <List.Content>
@@ -121,7 +121,7 @@ class Projects extends Component {
           </Grid.Column>
           <Grid.Column style={{ marginTop: '2em' }}>
             <div class="container">
-              <video src="bikeshareinternationaldemo.mov" width="600" controls></video>
+              <video src="bikeshareinternationaldemo.mov" width="100%" controls></video>
             </div>
           </Grid.Column>
         </Grid>

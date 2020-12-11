@@ -17,11 +17,8 @@ class Resume extends Component {
         <Header as='h2' dividing>
         </Header>
         <Container textAlign="center">
-          <iframe
-            src="resume.pdf"
-            width="700"
-            height="700"
-          />
+          <object data="resume.pdf" type="application/pdf" width="100%" height="800px"  allowfullscreen> 
+          </object>
         </Container>
       </Container>
     );
