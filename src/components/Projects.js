@@ -1,21 +1,17 @@
 import React, { Component, Fragment } from 'react'
-import { Header, Container, List, Grid, Icon } from 'semantic-ui-react'
+import { Header, Container, List, Grid } from 'semantic-ui-react'
 
 class Projects extends Component {
-
-  componentDidMount() {
-    console.log("projects!")
-  }
 
   render() {
     return(
       <Container style={{ marginTop: '6em' }}>
         <Fragment>
           <Header as='h1' color="blue">
-            <img src="logo.png"/>
+            <img src="logo.png" alt="logo"/>
             <Header.Content >
               Projects
-              <Header.Subheader>Demonstrations of select individual creations.</Header.Subheader>
+              <Header.Subheader>Individual & collaborative creations.</Header.Subheader>
             </Header.Content>
           </Header>
         </Fragment>

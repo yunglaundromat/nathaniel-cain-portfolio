@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Header, Icon, Container, Image, Grid, List } from 'semantic-ui-react'
+import { Header, Container, Image, Grid, List } from 'semantic-ui-react'
 
 class Home extends Component {
 
@@ -8,7 +8,7 @@ class Home extends Component {
       <Container style={{ marginTop: '6em' }}>
         <Fragment>
           <Header as='h1' color="blue">
-            <img src="logo.png"/>
+            <img src="logo.png" alt="logo"/>
             <Header.Content >
               Nathaniel Cain
               <Header.Subheader>Software Engineer</Header.Subheader>

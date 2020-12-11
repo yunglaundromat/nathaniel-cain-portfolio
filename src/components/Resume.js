@@ -8,7 +8,7 @@ class Resume extends Component {
       <Container style={{ marginTop: '6em' }}>
         <Fragment>
           <Header as='h1' color="blue">
-            <img src="logo.png"/>
+            <img src="logo.png" alt="logo"/>
             <Header.Content >
               Resume
               <Header.Subheader>Click the image for a downloadable PDF.</Header.Subheader>
