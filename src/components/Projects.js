@@ -15,7 +15,7 @@ class Projects extends Component {
             <img src="logo.png"/>
             <Header.Content >
               Projects
-              <Header.Subheader>Demonstrations of select individual projects and collaborative creations.</Header.Subheader>
+              <Header.Subheader>Demonstrations of select individual creations.</Header.Subheader>
             </Header.Content>
           </Header>
         </Fragment>

@@ -66,33 +66,31 @@ class AppContainer extends Component {
               return <Resume {...routeProps} />
             }} />
         </Switch>
-        <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }} fluid>
+        <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '3em 0em' }} fluid>
           <Container textAlign='center'>
-            <Grid inverted stackable columns={4} centered>
-              <Grid.Column width={1} textAlign="center">
-                <Button circular color="blue" icon='github' href="https://github.com/yunglaundromat"/>
-              </Grid.Column>
-              <Grid.Column width={1} textAlign="center">
-                <Button circular color="blue" icon='linkedin' href="https://www.linkedin.com/in/nathaniel-cain/"/>
-              </Grid.Column>
-              <Grid.Column width={1} textAlign="center">
-                <Button circular color="blue" icon='angellist' href="https://angel.co/u/nathaniel-cain"/>
-              </Grid.Column>
-              <Grid.Column width={1} textAlign="center">
-                <Button circular color="blue" icon='medium m' href="https://medium.com/@nathanielcain"/>
-              </Grid.Column>
-            </Grid>
-            <Divider inverted section />
-            <List horizontal inverted link size='small'>
-              <List.Item>
-                Copyright © 2020 Nathaniel Cain
-              </List.Item>
-              <br></br>
-              <List.Item>
-                Built with Semantic UI React<span> </span>
-                <Icon name='react' />
-              </List.Item>
-            </List>
+             <List horizontal inverted divided link size='small'>
+               <List.Item as='a' href='https://github.com/yunglaundromat'>
+                 GitHub
+               </List.Item>
+               <List.Item as='a' href='https://www.linkedin.com/in/nathaniel-cain/'>
+                 LinkedIn
+               </List.Item>
+               <List.Item as='a' href='https://angel.co/u/nathaniel-cain'>
+                 AngelList
+               </List.Item>
+               <List.Item as='a' href='https://medium.com/@nathanielcain'>
+                 Medium
+               </List.Item>
+               <Divider inverted section fitted/>
+             </List>
+            </Container>
+            <Container textAlign='center'>
+              <List horizontal inverted link size='small' centered>
+                <List.Item>
+                  Built with Semantic UI React<span> </span>
+                  <Icon name='react'/>
+                </List.Item>
+              </List>
           </Container>
         </Segment>
       </div>
