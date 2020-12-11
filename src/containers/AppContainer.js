@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Home from '../components/Home'
 import Projects from '../components/Projects'
 import Resume from '../components/Resume'
+import NavBar from '../components/NavBar'
 import { Switch, Route } from 'react-router-dom'
 import { Container, Divider, List, Segment, Icon, Menu } from 'semantic-ui-react'
 
@@ -45,15 +46,7 @@ class AppContainer extends Component {
     return (
       <div>
         <Container>
-          <Menu fixed='top' inverted icon borderless>
-            <Container>
-              <Menu.Item onClick={this.handleClick} className="home"><Icon name="home" size="large"/></Menu.Item>
-              <Menu.Item position="right" onClick={this.handleClick} className="home">About Me</Menu.Item>
-              <Menu.Item onClick={this.handleClick} className="projects">Projects</Menu.Item>
-              <Menu.Item href='https://medium.com/@nathanielcain'>Blogs</Menu.Item>
-              <Menu.Item onClick={this.handleClick} className="resume">Resume</Menu.Item>
-            </Container>
-          </Menu>
+          <NavBar handleClick={this.handleClick}/>
         </Container>
         <Switch>
           <Route path="/home" render={(routeProps) => {
