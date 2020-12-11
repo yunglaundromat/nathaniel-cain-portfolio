@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react'
 import Home from '../components/Home'
 import Projects from '../components/Projects'
 import Resume from '../components/Resume'
-import Contact from '../components/Contact'
 import { Switch, Route } from 'react-router-dom'
 import { Container, Divider, Grid, List, Segment, Icon, Button, Menu, Image } from 'semantic-ui-react'
 
@@ -24,8 +23,6 @@ class AppContainer extends Component {
       newSelection = "projects"
     } else if (e.target.className.includes("resume")) {
       newSelection = "resume"
-    } else if (e.target.className.includes("contact")) {
-      newSelection = "contact"
     }
 
     this.setState({
@@ -40,8 +37,6 @@ class AppContainer extends Component {
       this.props.history.push("/projects")
     } else if (this.state.selection === "resume") {
       this.props.history.push("/resume")
-    } else if (this.state.selection === "contact") {
-      this.props.history.push("contact")
     }
   }
 
@@ -57,7 +52,6 @@ class AppContainer extends Component {
               <Menu.Item onClick={this.handleClick} className="projects">Projects</Menu.Item>
               <Menu.Item href='https://medium.com/@nathanielcain'>Blogs</Menu.Item>
               <Menu.Item onClick={this.handleClick} className="resume">Resume</Menu.Item>
-              <Menu.Item onClick={this.handleClick} className="contact">Contact</Menu.Item>
             </Container>
           </Menu>
         </Container>
@@ -70,9 +64,6 @@ class AppContainer extends Component {
             }} />
             <Route path="/resume" render={(routeProps) => {
               return <Resume {...routeProps} />
-            }} />
-            <Route path="/contact" render={(routeProps) => {
-              return <Contact {...routeProps}/>
             }} />
         </Switch>
         <Segment inverted vertical style={{ margin: '5em 0em 0em', padding: '5em 0em' }}>
