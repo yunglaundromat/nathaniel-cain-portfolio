@@ -66,13 +66,10 @@ class App extends Component {
               <Menu.Item href='https://medium.com/@nathanielcain'>Blogs</Menu.Item>
               <Menu.Item onClick={this.handleClick} className="resume">Resume</Menu.Item>
             </Sidebar>
-            <Segment>
-              <AppContainer/>
-            </Segment>
+            <AppContainer/>
             <Sidebar.Pusher
               dimmed={this.state.visible}
               onClick={this.handlePusher}
-              style={{ minHeight: "100vh" }}
             >
               <Menu fixed="top" inverted borderless>
                 <Menu.Item onClick={this.handleToggle}>
