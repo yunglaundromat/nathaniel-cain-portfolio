@@ -2,52 +2,14 @@ import React, { Component } from 'react'
 import Home from '../components/Home'
 import Projects from '../components/Projects'
 import Resume from '../components/Resume'
-import NavBar from '../components/NavBar'
 import { Switch, Route } from 'react-router-dom'
 import { Container, Divider, List, Segment, Icon, Menu } from 'semantic-ui-react'
 
 class AppContainer extends Component {
 
-  componentDidMount() {
-    this.props.history.push("/home")
-  }
-
-  state = {
-    selection: "home"
-  }
-
-  handleClick = (e) => {
-    let newSelection;
-    if (e.target.className.includes("home")) {
-      newSelection = "home"
-    } else if (e.target.className.includes("projects")) {
-      newSelection = "projects"
-    } else if (e.target.className.includes("resume")) {
-      newSelection = "resume"
-    }
-
-    this.setState({
-      selection: newSelection
-    }, () => this.renderSelection())
-  }
-
-  renderSelection() {
-    if (this.state.selection === "home") {
-      this.props.history.push("/home")
-    } else if (this.state.selection === "projects") {
-      this.props.history.push("/projects")
-    } else if (this.state.selection === "resume") {
-      this.props.history.push("/resume")
-    }
-  }
-
-
   render() {
     return (
       <div>
-        <Container>
-          <NavBar handleClick={this.handleClick}/>
-        </Container>
         <Switch>
           <Route path="/home" render={(routeProps) => {
               return <Home {...routeProps} />
