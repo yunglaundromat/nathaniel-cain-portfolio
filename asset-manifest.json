@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/nathaniel-cain-portfolio/static/css/main.4a4137e4.chunk.css",
+    "main.js": "/nathaniel-cain-portfolio/static/js/main.c927fcea.chunk.js",
+    "main.js.map": "/nathaniel-cain-portfolio/static/js/main.c927fcea.chunk.js.map",
+    "runtime-main.js": "/nathaniel-cain-portfolio/static/js/runtime-main.61a74f9f.js",
+    "runtime-main.js.map": "/nathaniel-cain-portfolio/static/js/runtime-main.61a74f9f.js.map",
+    "static/css/2.edbd3a79.chunk.css": "/nathaniel-cain-portfolio/static/css/2.edbd3a79.chunk.css",
+    "static/js/2.400010ae.chunk.js": "/nathaniel-cain-portfolio/static/js/2.400010ae.chunk.js",
+    "static/js/2.400010ae.chunk.js.map": "/nathaniel-cain-portfolio/static/js/2.400010ae.chunk.js.map",
+    "index.html": "/nathaniel-cain-portfolio/index.html",
+    "static/css/2.edbd3a79.chunk.css.map": "/nathaniel-cain-portfolio/static/css/2.edbd3a79.chunk.css.map",
+    "static/css/main.4a4137e4.chunk.css.map": "/nathaniel-cain-portfolio/static/css/main.4a4137e4.chunk.css.map",
+    "static/js/2.400010ae.chunk.js.LICENSE.txt": "/nathaniel-cain-portfolio/static/js/2.400010ae.chunk.js.LICENSE.txt",
+    "static/media/semantic.less": "/nathaniel-cain-portfolio/static/media/outline-icons.ddae9b1b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.61a74f9f.js",
+    "static/css/2.edbd3a79.chunk.css",
+    "static/js/2.400010ae.chunk.js",
+    "static/css/main.4a4137e4.chunk.css",
+    "static/js/main.c927fcea.chunk.js"
+  ]
+}
