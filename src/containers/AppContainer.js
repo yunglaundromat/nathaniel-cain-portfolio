@@ -3,7 +3,7 @@ import Home from '../components/Home'
 import Projects from '../components/Projects'
 import Resume from '../components/Resume'
 import { Switch, Route } from 'react-router-dom'
-import { Container, Divider, List, Segment, Icon, Menu } from 'semantic-ui-react'
+import { Container, Divider, List, Segment, Icon } from 'semantic-ui-react'
 
 class AppContainer extends Component {
 
