@@ -67,7 +67,9 @@ class App extends Component {
               <Menu.Item href='https://medium.com/@nathanielcain'>Blogs</Menu.Item>
               <Menu.Item onClick={this.handleClick} className="resume">Resume</Menu.Item>
             </Sidebar>
-            <AppContainer/>
+              <Container onClick={this.handleToggle}>
+                <AppContainer />
+              </Container>
             <Sidebar.Pusher
               dimmed={this.state.visible}
               onClick={this.handlePusher}
