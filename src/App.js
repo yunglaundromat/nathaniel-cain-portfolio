@@ -6,7 +6,6 @@ class App extends Component {
 
   componentDidMount() {
     this.props.history.push("/home")
-    this.setState({visible: false})
   }
 
   state = {
