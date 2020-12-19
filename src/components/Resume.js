@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react'
-import { Container, Header, Image, Segment, Divider, Grid } from "semantic-ui-react";
+import React, { Component } from 'react'
+import { Container, Divider, Image, Grid } from "semantic-ui-react";
 
 class Resume extends Component {
 
@@ -22,11 +22,6 @@ class Resume extends Component {
             href='http://nathanielcain.com/resume.pdf'
             target='_blank'
           />
-        </Grid>
-        <Divider hidden />
-        <br></br>
-        <Grid columns={1} stackable centered="true">
-          <Image size='tiny' src='logo.png'/>
         </Grid>
       </Container>
     );

@@ -9,7 +9,6 @@ import {
   Button,
   Container,
   Divider,
-  Dropdown,
   Header,
   Icon,
   Image,

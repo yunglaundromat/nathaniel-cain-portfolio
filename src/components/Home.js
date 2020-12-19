@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react'
-import { Header, Container, Image, Grid, List, Segment, Divider } from 'semantic-ui-react'
+import React, { Component } from 'react'
+import { Container, Image, Grid, List, Divider } from 'semantic-ui-react'
 
 class About extends Component {
 
