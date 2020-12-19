@@ -65,7 +65,7 @@ const HomepageHeading = ({ mobile }) => (
       smooth={true}
       offset={-70}
       duration={750}>
-      <Icon name='hand point down' />
+      <Icon name='angle down' />
     </Button>
   </Container>
 )
