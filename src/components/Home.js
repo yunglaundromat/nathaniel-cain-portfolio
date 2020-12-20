@@ -48,7 +48,7 @@ class About extends Component {
                             <List.Content>
                               <List.Header>additional</List.Header>
                               <List.Description>
-                                Knowledge of authorization & authentication using BCrypt and JWT (Javascript Web Token) and interactive mapping using Leaflet
+                                Adept in React Native, plus authorization & authentication using BCrypt and JWT (Javascript Web Token) and interactive mapping using Leaflet
                               </List.Description>
                             </List.Content>
                           </List.Item>
