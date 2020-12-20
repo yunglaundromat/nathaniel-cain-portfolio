@@ -34,7 +34,7 @@ class About extends Component {
                       <List.Icon name='folder' />
                       <List.Content>
                         <List.Header>javascript</List.Header>
-                        <List.Description>Equipped with a strong understanding of object-oriented Javascript </List.Description>
+                        <List.Description>Equipped with a strong understanding of object-oriented Javascript</List.Description>
                         <List.List>
                           <List.Item>
                             <List.Icon name='file' />

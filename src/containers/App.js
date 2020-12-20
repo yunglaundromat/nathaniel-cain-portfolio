@@ -43,8 +43,8 @@ const HomepageHeading = ({ mobile }) => (
       Nathaniel Cain
     </Header>
     <Header
-      as='h2'
-      content='Full Stack Web Developer'
+      as='h3'
+      content='Software Engineer/Full Stack Web Developer'
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
