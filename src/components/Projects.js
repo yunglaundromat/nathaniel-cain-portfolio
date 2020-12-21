@@ -96,7 +96,7 @@ class Projects extends Component {
                       <List.Icon name='folder' />
                       <List.Content>
                         <List.Header>server-side</List.Header>
-                        <List.Description>Persists login data and favorites list of each user to the backend using Ruby on Rails. Additionally, allows users to add a new network entry if the network is missing from the data fetched from City Bikes API. Utilizes a PostgreSQL database using ORM with ActiveRecord.</List.Description>
+                        <List.Description>Persists login data and favorites list of each user to the backend using Ruby on Rails. Additionally, allows users to add a new network entry if the network is missing from the data fetched from City Bikes API. Utilizes a PostgreSQL database.</List.Description>
                         <List.List>
                           <List.Item>
                             <List.Icon name='linkify' />
