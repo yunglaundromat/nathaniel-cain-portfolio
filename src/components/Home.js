@@ -27,7 +27,7 @@ class About extends Component {
                       <List.Icon name='folder' />
                       <List.Content>
                         <List.Header>ruby</List.Header>
-                        <List.Description>Proficient in vanilla Ruby and Sinatra, as well as Ruby on Rails using ActiveRecord ORM</List.Description>
+                        <List.Description>Proficient in vanilla Ruby and Sinatra, as well as Ruby on Rails using ActiveRecord object relational mapping.</List.Description>
                       </List.Content>
                     </List.Item>
                     <List.Item>
