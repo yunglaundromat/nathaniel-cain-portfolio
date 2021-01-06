@@ -15,7 +15,7 @@ class About extends Component {
           <a>About Me</a>
         </Divider>
         <Grid columns={2} stackable centered="true">
-          <Grid.Column style={{ marginTop: '5em' }}>
+          <Grid.Column style={{ marginTop: '1em' }}>
             <List>
               <List.Item>
                 <List.Icon name='folder' />
@@ -26,29 +26,30 @@ class About extends Component {
                     <List.Item>
                       <List.Icon name='folder' />
                       <List.Content>
-                        <List.Header>ruby</List.Header>
-                        <List.Description>Proficient in vanilla Ruby and Sinatra, as well as Ruby on Rails using ActiveRecord object relational mapping.</List.Description>
-                      </List.Content>
-                    </List.Item>
-                    <List.Item>
-                      <List.Icon name='folder' />
-                      <List.Content>
-                        <List.Header>javascript</List.Header>
-                        <List.Description>Equipped with a strong understanding of object-oriented Javascript</List.Description>
+                        <List.Header>languages</List.Header>
                         <List.List>
                           <List.Item>
                             <List.Icon name='file' />
                             <List.Content>
-                              <List.Header>react</List.Header>
-                              <List.Description>Fluent in React.js and Redux</List.Description>
+                              <List.Header>ruby</List.Header>
+                              <List.Description>Proficient in app development using object-oriented Ruby.</List.Description>
                             </List.Content>
                           </List.Item>
                           <List.Item>
                             <List.Icon name='file' />
                             <List.Content>
-                              <List.Header>additional</List.Header>
+                              <List.Header>javascript</List.Header>
                               <List.Description>
-                                Adept in React Native, plus authorization & authentication using BCrypt and JWT (Javascript Web Token) and interactive mapping using Leaflet
+                                Expertise with object-oriented Javascript.
+                              </List.Description>
+                            </List.Content>
+                          </List.Item>
+                          <List.Item>
+                            <List.Icon name='file' />
+                            <List.Content>
+                              <List.Header>java</List.Header>
+                              <List.Description>
+                                Experience developing in basic Java.
                               </List.Description>
                             </List.Content>
                           </List.Item>
@@ -58,16 +59,81 @@ class About extends Component {
                     <List.Item>
                       <List.Icon name='folder' />
                       <List.Content>
-                        <List.Header>java</List.Header>
-                        <List.Description>
-                          Experience developing in basic Java
-                        </List.Description>
+                        <List.Header>frameworks</List.Header>
                         <List.List>
                           <List.Item>
                             <List.Icon name='file' />
                             <List.Content>
+                              <List.Header>react.js & redux</List.Header>
+                              <List.Description>
+                                Fluent in React.js and Redux, as part of full stack applications using RESTful APIs, utilizing AJAX, and JSX for markup.
+                              </List.Description>
+                            </List.Content>
+                          </List.Item>
+                          <List.Item>
+                            <List.Icon name='file' />
+                            <List.Content>
+                              <List.Header>ruby on rails</List.Header>
+                              <List.Description>Well-versed in creating RESTful APIs using Rails (utilizing ActiveRecord object relational mapping) as well as creating complete, client-facing applications utilizing embedded Ruby.</List.Description>
+                            </List.Content>
+                          </List.Item>
+                          <List.Item>
+                            <List.Icon name='file' />
+                            <List.Content>
+                              <List.Header>sinatra</List.Header>
+                              <List.Description>
+                                Practiced in manually creating MVC for smaller applications using Sinatra.
+                              </List.Description>
+                            </List.Content>
+                          </List.Item>
+                          <List.Item>
+                            <List.Icon name='file' />
+                            <List.Content>
                               <List.Header>selenium</List.Header>
-                              <List.Description>Trained in Selenium utilizing Java, for testing in large-scale applications</List.Description>
+                              <List.Description>
+                                Trained in Selenium utilizing Java for testing in large-scale applications.
+                              </List.Description>
+                            </List.Content>
+                          </List.Item>
+                        </List.List>
+                      </List.Content>
+                    </List.Item>
+                    <List.Item>
+                      <List.Icon name='folder' />
+                      <List.Content>
+                        <List.Header>databases</List.Header>
+                        <List.List>
+                          <List.Item>
+                            <List.Icon name='file' />
+                            <List.Content>
+                              <List.Header>SQL</List.Header>
+                              <List.Description>
+                                Well-experienced manually writing SQL queries and working with table relations.
+                              </List.Description>
+                            </List.Content>
+                          </List.Item>
+                          <List.Item>
+                            <List.Icon name='file' />
+                            <List.Content>
+                              <List.Header>PostgreSQL & SQLite</List.Header>
+                              <List.Description>
+                                Utilized Postgres and SQLite for full-stack apps using Rails as a backend.
+                              </List.Description>
+                            </List.Content>
+                          </List.Item>
+                        </List.List>
+                      </List.Content>
+                    </List.Item>
+                    <List.Item>
+                      <List.Icon name='folder' />
+                      <List.Content>
+                        <List.Header>additional</List.Header>
+                        <List.List>
+                          <List.Item>
+                            <List.Icon name='file' />
+                            <List.Content>
+                              <List.Header>extracurricular skills</List.Header>
+                              <List.Description>Adept in React Native, plus authorization & authentication using BCrypt and JWT (Javascript Web Token) and interactive mapping using Leaflet.</List.Description>
                             </List.Content>
                           </List.Item>
                         </List.List>
@@ -87,7 +153,7 @@ class About extends Component {
             </List>
           </Grid.Column>
           <Grid.Column>
-            <Image src='img.jpg' size='large' rounded centered style={{ marginTop: '1em' }}/>
+            <Image src='img.jpg' size='large' rounded centered style={{ marginTop: '3em' }}/>
           </Grid.Column>
         </Grid>
       </Container>
