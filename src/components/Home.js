@@ -40,7 +40,7 @@ class About extends Component {
                             <List.Content>
                               <List.Header>javascript</List.Header>
                               <List.Description>
-                                Expertise with object-oriented Javascript, utilizing HTML5 and CSS3.
+                                Expertise with object-oriented JavaScript, utilizing HTML5 and CSS3.
                               </List.Description>
                             </List.Content>
                           </List.Item>
