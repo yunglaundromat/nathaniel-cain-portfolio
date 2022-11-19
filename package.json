@@ -13,7 +13,7 @@
     "react-dom": "^17.0.1",
     "react-pdf": "^5.0.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.1",
     "semantic-ui-react": "^0.88.2"
   },
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@craco/craco": "^5.8.0",
-    "@semantic-ui-react/craco-less": "^1.2.1",
+    "@semantic-ui-react/craco-less": "^2.0.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "fomantic-ui-less": "^2.8.7",
     "gh-pages": "^3.1.0",
